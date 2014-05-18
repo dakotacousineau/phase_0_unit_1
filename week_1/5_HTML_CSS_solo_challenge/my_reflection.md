@@ -8,3 +8,12 @@
 * Which parts of the challenge did you find tedious?
 
 <!-- Add your reflection here. Remove the comment markers -->
+I mostly went over the example code used and then put it in my website updating the colors and pictures ect. 
+
+I had trouble with psuedo classes like hover
+
+It is all pretty much new to me and I used the example material pretty heavily.
+
+I really like seeing my work in action and loading the site.
+
+None of it was tedious as it is still new.
