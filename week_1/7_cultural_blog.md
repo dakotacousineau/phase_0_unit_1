@@ -23,3 +23,5 @@ Talk about what came up for you and anything you want in addition to the questio
 Link to your blog on the index of your github.io site and sync/push your changes. 
 
 Share your blog on the google+ community under "Blog Posts!" Read others blogs. What did you like about them? 
+
+I really like the effort people put into their blogs to make them look nice and not just bare bones to get the assignment done. I am a little envious mine did not turn out as well and want to make it better.
