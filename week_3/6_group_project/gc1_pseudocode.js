@@ -30,3 +30,7 @@ var list 1 = {
 repeat var list 2 but for median take the two middle numbers add then divide by 2
 
 check work should display sum, median, mean of list 1 and 2
+// Reflect
+// This experiance was good in that our group communicated well
+// except for the missing person. We did not pass the test but I think 
+// this was definatly a learning curve in how to express ourselves

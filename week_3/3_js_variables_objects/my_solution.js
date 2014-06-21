@@ -1,33 +1,61 @@
-// I paired [by myself] on this challenge.
+
+// There is a section below where you will write your code.
+// Do not alter this object here.
+
+
+var terah = {
+  name: "Terah",
+  age: 32,
+  height: 66,
+  weight: 130,
+  hairColor: "brown",
+  eyeColor: "brown"
+}
+
+
 
 // __________________________________________
 // Write your code below.
+// var adam = Adam
+// add spouse to terah = adam
+// change terah.weight = 125
+// delete terah.eyeColor
+// add spouse to adam = terah
+// add terah.children = {}
+// add terah.children.Carson
+// same as above but .Carter
+// same as above but .Colton
+// add adam.children = terah.children
 
-var secretNumber= 7;
 
-var password= "just open the door";
-
-var allowedIn= false;
-
-var members= ["John", "2", "3", "Mary"];
+var adam = {}
+adam["name"] = "Adam";
+adam["spouse"] = terah;
 
 
-
+terah["spouse"] = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+terah["children"] = {};
+terah.children["carson"] = {}
+terah.children.carson["name"] = "Carson";
+terah.children["carter"] = {}
+terah.children.carter["name"] = "Carter";
+terah.children["colton"] = {}
+terah.children.colton["name"] = "Colton";
+adam["children"] = terah.children;
+// __________________________________________
+// Reflection: Use the reflection guidelines
+// 
+// Well I had to referance the reading material but got 
+// everthing to work. I only ran into an issue on Adam
+// children for some reason it didn't work unless I had
+// the code below terah
+// 
 
 
 // __________________________________________
-// Reflection: Use the reflection guidelines to write a reflection here. 
-// 
-// I had quite a bit of an issue using the commandline. It was mostly due to saving a shortcut
-// and not moving the file I was going to be working in. Causing wrong folder issues. 
-// 
-// 
-// 
-
-
-// __________________________________________
-// Test Code:  Do not alter code below this line.
-
+// Driver Code:  Do not alter code below this line.
 function assert(test, message, test_number) {
   if (!test) {
     console.log(test_number + "false");
@@ -38,56 +66,70 @@ function assert(test, message, test_number) {
 }
 
 assert(
-  (typeof secretNumber === 'number'),
-  "The value of secretNumber should be a number.",
+  (adam instanceof Object),
+  "The value of adam should be an Object.",
   "1. "
 )
 
 assert(
-  secretNumber === 7,
-  "The value of secretNumber should be 7.",
+  (adam.name === "Adam"),
+  "The value of the adam name property should be 'Adam'.",
   "2. "
 )
 
 assert(
-  typeof password === 'string',
-  "The value of password should be a string.",
+  terah.spouse === adam,
+  "terah should have a spouse property with the value of the variable adam.",
   "3. "
 )
 
 assert(
-  password === "just open the door",
-  "The value of password should be 'just open the door'.",
+  terah.weight === 125,
+  "The terah weight property should be 125.",
   "4. "
 )
 
 assert(
-  typeof allowedIn === 'boolean',
-  "The value of allowedIn should be a boolean.",
+  terah.eyeColor === undefined,
+  "The terah eyeColor property should be removed.",
   "5. "
 )
 
 assert(
-  allowedIn === false,
-  "The value of allowedIn should be false.",
+  terah.spouse.spouse === terah,
+  "The terah spouse property's value spouse property should be terah.",
   "6. "
 )
 
 assert(
-  members instanceof Array,
-  "The value of members should be an array",
+  (terah.children instanceof Object),
+  "The value of the terah children property should be an Object.",
   "7. "
 )
 
 assert(
-  members[0] === "John",
-  "The first element in the value of members should be 'John'.",
+  terah.children.carson.name === "Carson",
+  "The terah children property should have a carson property with its own property name with a value of 'Carson'.",
   "8. "
 )
 
 assert(
-  members[3] === "Mary",
-  "The fourth element in the value of members should be 'Mary'.",
+  terah.children.carter.name === "Carter",
+  "The terah children property should have a carter property with its own property name with a value of 'Carter'.",
   "9. "
 )
 
+assert(
+  terah.children.colton.name === "Colton",
+  "The terah children property should have a colton property with its own property name with a value of 'Colton'.",
+  "10. "
+)
+
+assert(
+  adam.children === terah.children,
+  "The value of the adam children property should be the value of the terah children property",
+  "11. "
+)
+
+console.log("\nHere is your final terah object:")
+console.log(terah)
