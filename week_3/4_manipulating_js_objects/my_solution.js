@@ -16,21 +16,41 @@ var terah = {
 
 // __________________________________________
 // Write your code below.
+// var adam = Adam
+// add spouse to terah = adam
+// change terah.weight = 125
+// delete terah.eyeColor
+// add spouse to adam = terah
+// add terah.children = {}
+// add terah.children.Carson
+// same as above but .Carter
+// same as above but .Colton
+// add adam.children = terah.children
 
 
+var adam = {}
+adam["name"] = "Adam";
+adam["spouse"] = terah;
 
 
-
-
-
-
+terah["spouse"] = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+terah["children"] = {};
+terah.children["carson"] = {}
+terah.children.carson["name"] = "Carson";
+terah.children["carter"] = {}
+terah.children.carter["name"] = "Carter";
+terah.children["colton"] = {}
+terah.children.colton["name"] = "Colton";
+adam["children"] = terah.children;
 // __________________________________________
 // Reflection: Use the reflection guidelines
 // 
-// 
-// 
-// 
-// 
+// Well I had to referance the reading material but got 
+// everthing to work. I only ran into an issue on Adam
+// children for some reason it didn't work unless I had
+// the code below terah
 // 
 
 
