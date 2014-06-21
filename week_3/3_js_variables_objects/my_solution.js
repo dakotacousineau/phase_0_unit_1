@@ -1,10 +1,15 @@
-// I paired [by myself, with:] on this challenge.
+// I paired [by myself] on this challenge.
 
 // __________________________________________
 // Write your code below.
 
+var secretNumber= 7;
 
+var password= "just open the door";
 
+var allowedIn= false;
+
+var members= ["John", "2", "3", "Mary"];
 
 
 
@@ -13,8 +18,8 @@
 // __________________________________________
 // Reflection: Use the reflection guidelines to write a reflection here. 
 // 
-// 
-// 
+// I had quite a bit of an issue using the commandline. It was mostly due to saving a shortcut
+// and not moving the file I was going to be working in. Causing wrong folder issues. 
 // 
 // 
 // 
